@@ -17,7 +17,7 @@ megabytes.
 ## Layout
 
 ```
-arcade/
+arcade/assets/
   levels/        level backdrops and props   (598M)
   robots/        robot sprites               (364M)
   maps/          world / region / stage maps  (65M)
@@ -34,7 +34,7 @@ Consumed through jsDelivr, which serves any public GitHub repo as a CDN
 with CORS enabled and no credentials:
 
 ```
-https://cdn.jsdelivr.net/gh/Milldrew/milldrew.com-assets@main/arcade/<path>
+https://cdn.jsdelivr.net/gh/Milldrew/milldrew.com-assets@main/arcade/assets/<path>
 ```
 
 The apps read this prefix from a single build-time value, so pointing them
@@ -47,7 +47,7 @@ development) is one environment variable and no code change.
 tag or commit instead:
 
 ```
-https://cdn.jsdelivr.net/gh/Milldrew/milldrew.com-assets@v1/arcade/<path>
+https://cdn.jsdelivr.net/gh/Milldrew/milldrew.com-assets@v1/arcade/assets/<path>
 ```
 
 jsDelivr caches aggressively; a mutable ref like `@main` can take up to
